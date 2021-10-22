@@ -675,7 +675,7 @@ p,
 label,
 .btn,
 a,
-address {
+address, blockquote, figcaption {
     font-family: "helvetica";
     font-weight: 400;
     /*color: #575757!important;*/
