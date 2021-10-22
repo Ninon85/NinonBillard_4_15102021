@@ -1,14 +1,12 @@
 <!doctype html>
 <html lang="FR-fr">
-<!--namespace open graph-->
-<html xmlns:og="http://ogp.me/ns#">
 
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
 	<meta name="description" content="Contactez la Chouette agence ! L'entreprise web design de référence à Lyon.">
-	<meta name="robots" content="index,follow"/>
+	<meta name="robots" content="index,follow" />
 	<link rel="shortcut icon" type="image/png" href="favicon.jpg">
 
 	<link rel="stylesheet" type="text/css" href="./css/bootstrap.css">
@@ -32,14 +30,17 @@
 	<meta property="og:description" content="Entreprise webdesign à Lyon">
 
 	<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-1VTGWF3P9V"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-1VTGWF3P9V"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
 
-  gtag('config', 'G-1VTGWF3P9V');
-</script>
+		function gtag() {
+			dataLayer.push(arguments);
+		}
+		gtag('js', new Date());
+
+		gtag('config', 'G-1VTGWF3P9V');
+	</script>
 	<!-- Analytics END -->
 
 </head>
@@ -100,31 +101,36 @@
 			<div class="container bloc-lg">
 				<div class="row">
 					<div class="col-sm-6">
-						<form id="form_1" novalidate success-msg="Your message has been sent."
-							fail-msg="Sorry it seems that our mail server is not responding, Sorry for the inconvenience!">
+						<form id="form_1" method="post" action="includes/form_1.php">
 							<div class="form-group">
 								<label for="name">
 									Nom
 								</label>
-								<input id="name" class="form-control" required />
+								<input id="name" name="name" class="form-control" required
+									placeholder="Votre nom de famille" />
 							</div>
 							<div class="form-group">
 								<label for="email">
 									Adresse email
 								</label>
-								<input id="email" class="form-control" type="email" required />
+								<input id="email" name="email" class="form-control" type="email" required
+									placeholder="votreAdresse@mail.xx" />
 							</div>
 							<div class="form-group">
 								<label for="input_504">
 									Comment nous avez-vous connu ?
 								</label>
-								<input class="form-control" type="email" required id="input_504" />
+								<select class="form-control" name="input_504" id="input_504">
+									<option value="connaissance">Par une connaissance</option>
+									<option value="internet" selected>En faisant une recherche sur internet</option>
+									<option value="réseaux">Sur les réseaux sociaux</option>
+								</select>
 							</div>
 							<div class="form-group">
 								<label for="message">
 									Brief de votre projet (Ajoutez autant de détails que nécessaire)<br>
-								</label><textarea id="message" class="form-control" rows="4" cols="50"
-									required></textarea>
+								</label><textarea id="message" name="message" class="form-control" rows="4" cols="50"
+									required placeholder="Quel est votre projet ?"></textarea>
 							</div>
 							<button class="bloc-button btn btn-lg btn-block cta-hero btn-atomic-tangerine"
 								type="submit">
@@ -160,26 +166,31 @@
 						<div class="row row-no-gutters social">
 							<div class="col-sm-3">
 								<div class="text-center">
-									<a class="social" href="#"><span class="fa fa-twitter icon-md"
-											aria-label="Retrouver la Chouette agence sur Twitter"></span></a>
+									<a class="social" href="https://twitter.com/?lang=fr" title="Twitter"
+										aria-label="Retrouver la Chouette agence sur Twitter"><span
+											class="fa fa-twitter icon-md"></span></a>
 								</div>
 							</div>
 							<div class="col-sm-3">
 								<div class="text-center">
-									<a class="social" href="#"><span class="fa fa-facebook icon-md"
-											aria-label="Retrouver la Chouette agence sur Facebook"></span></a>
+									<a class="social" href="https://fr-fr.facebook.com/" title="Facebook"
+										aria-label="Retrouver la Chouette agence sur Facebook"><span
+											class="fa fa-facebook icon-md"></span></a>
 								</div>
 							</div>
 							<div class="col-sm-3">
 								<div class="text-center">
-									<a class="social" href="#"><span class="fa fa-dribbble icon-md"
-											aria-label="Retrouver la Chouette agence sur Dribbble"></span></a>
+									<a class="social" href="https://dribbble.com/" title="Dribbble"
+										aria-label="Retrouver la Chouette agence sur Dribbble"><span
+										class="fa fa-dribbble icon-md"></span></a>
 								</div>
 							</div>
 							<div class="col-sm-3">
 								<div class="text-center">
-									<a class="social" href="#"><span class="fa fa-instagram icon-md"
-											aria-label="Retrouver la Chouette agence sur Instagram"></span></a>
+									<a class="social" href="https://www.instagram.com/?hl=fr" title="Instagram"
+										aria-label="Retrouver la Chouette agence sur Instagram"><span
+										class="fa fa-instagram icon-md"
+										></span></a>
 								</div>
 							</div>
 						</div>
