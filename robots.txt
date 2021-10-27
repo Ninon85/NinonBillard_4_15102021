@@ -4,5 +4,3 @@ Allow: /
 # allow all robots
 User-agent: *
 Allow: /
-
-https://ninon85.github.io/NinonBillard_4_15102021/sitemap.xml
