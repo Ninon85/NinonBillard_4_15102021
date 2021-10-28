@@ -46,9 +46,12 @@ a:hover {
 
 .bloc .container address {
     color: #000000;
-    font-size: 1em;
+    font-size: 1.2em;
+    margin-bottom: 0;
 }
-
+.bloc a{
+    font-size: 1.2em;
+}
 .bloc-lg {
     padding: 100px 50px;
 }
@@ -664,7 +667,6 @@ h5,
 h6,
 p,
 label,
-
 a,
 address,
 blockquote,
@@ -673,7 +675,9 @@ figcaption {
     font-weight: 400;
     color: #000000;
 }
-
+.opening-time{
+    padding: 0 !important;
+}
 .container {
     max-width: 1000px;
 }
