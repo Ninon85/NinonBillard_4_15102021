@@ -225,7 +225,7 @@ a:hover {
 .l-bloc h5 a,
 .l-bloc h6 a,
 .l-bloc p a {
-    color: rgba(0, 0, 0, .6);
+    color: rgba(0, 0, 0, 1);
 }
 
 .l-bloc .portfolio-row .col-sm-6 a:focus img {
@@ -337,17 +337,26 @@ a:hover {
     float: left;
     margin-top: 4px;
     font-size: 16px;
+    position: relative;
 }
-
+.nav>li a::after{
+    content: "";
+    inset: 0;
+    background: #F3976C;
+    position: absolute;
+    opacity: 0;
+    z-index: -1;
+}
 .navbar-nav .open .dropdown-menu>li>a {
     text-align: inherit;
 }
 
-.nav>li a:hover,
-.nav>li a:focus {
-    background: transparent;
-    transform: scale(1.5);
+.nav>li a:hover::after,
+.nav>li a:focus::after {
+    opacity: 1;
+      
 }
+
 
 .navbar-toggle {
     margin: 10px 10px 0 0;
