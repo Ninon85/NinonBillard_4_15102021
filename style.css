@@ -269,11 +269,13 @@ a:hover {
     transform: scale(1.5);
 }
 #bloc-8 .bloc-sm .row .row-no-gutters .col-sm-3{
-    width: 25%;
+    width: 22%;
 }
 
 .row.row-no-gutters.social{
     display: flex;
+    justify-content: center;
+    align-items: flex-end;
 }
 .voffset {
     margin-top: 30px;
@@ -549,8 +551,8 @@ button {
     width: 40px;
     height: 40px;
     position: fixed;
-    bottom: 20px;
-    right: 20px;
+    bottom: 45px;
+    right: 10px;
     opacity: 0;
     z-index: 500;
     transition: all .3s ease-in-out;
