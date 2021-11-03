@@ -268,7 +268,13 @@ a:hover {
 #bloc-8 a:focus .icon-md {
     transform: scale(1.5);
 }
+#bloc-8 .bloc-sm .row .row-no-gutters .col-sm-3{
+    width: 25%;
+}
 
+.row.row-no-gutters.social{
+    display: flex;
+}
 .voffset {
     margin-top: 30px;
 }
