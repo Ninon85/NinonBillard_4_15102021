@@ -49,9 +49,7 @@ a:hover {
     font-size: 1.2em;
     margin-bottom: 0;
 }
-.bloc a{
-    font-size: 1.2em;
-}
+
 .bloc-lg {
     padding: 100px 50px;
 }
@@ -800,12 +798,6 @@ h4 {
 .black-background {
     background-color: rgba(165, 147, 99, 0.9);
     padding: 40px 40px 40px 40px;
-}
-
-.bold-link {
-    font-weight: 900;
-    text-decoration: underline !important;
-
 }
 
 .bgc-white {
