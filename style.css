@@ -144,7 +144,6 @@ a:hover {
 .d-bloc h6 a:hover,
 .d-bloc p a:hover {
     color: rgba(255, 255, 255, 1);
-    transform: scale(1.5);
 }
 
 .d-bloc .navbar-toggle .icon-bar {
@@ -806,8 +805,8 @@ h4 {
 .bold-link {
     font-weight: 900;
     text-decoration: underline !important;
-}
 
+}
 
 .bgc-white {
     background-color: #FFFFFF;
